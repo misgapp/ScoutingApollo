@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="66dp"
+        android:text="Slide to Continue -->"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balls to the vortex:"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Balls to the corner:"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Beacons Pressed:"
+        android:textSize="20dp"
+        android:layout_below="@+id/CornerTV"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/MinusVortex"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toEndOf="@+id/PlusCorner"
+        android:text="-"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/MinusCorner"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toEndOf="@+id/PlusCorner"
+        android:text="-"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/PlusCorner"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="+"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignStart="@+id/PlusVortex"
+        />
+
+    <Button
+        android:id="@+id/PlusVortex"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/textView8"
+        android:text="+"
+       />
+
+    <TextView
+        android:id="@+id/CornerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="23dp" />
+
+    <TextView
+        android:id="@+id/VortexTV"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignStart="@+id/CornerTV" />
+
+    <Button
+        android:id="@+id/PlusBeacon"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="+"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignStart="@+id/PlusCorner" />
+
+    <Button
+        android:id="@+id/MinusBeacon"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="-"
+        android:textColor="@color/colorAccent"
+        android:layout_alignBaseline="@+id/PlusBeacon"
+        android:layout_alignBottom="@+id/PlusBeacon"
+        android:layout_toEndOf="@+id/PlusBeacon" />
+
+    <TextView
+        android:id="@+id/BeaconTV"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/MinusBeacon"
+        android:layout_alignBottom="@+id/MinusBeacon"
+        android:layout_alignStart="@+id/CornerTV"
+        android:text="0"
+        android:textSize="20dp" />
+</RelativeLayout>

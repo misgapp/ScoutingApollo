@@ -1,0 +1,263 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="66dp"
+        android:text="Slide to Continue -->"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/balls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="30dp"
+        android:text="Corner parking:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="24dp"
+        android:text="Center parking:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="25dp"
+        android:text="Cap Ball on floor:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="25dp"
+        android:text="Balls to the corner:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="18dp"
+        android:text="Incorrect beacons:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="19dp"
+        android:text="Correct beacons:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balls to the vortex:"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:id="@+id/CapBall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:textOff="No"
+        android:textOn="Yes" />
+
+    <CheckBox
+        android:id="@+id/Correct2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:layout_alignBaseline="@+id/Correct0"
+        android:layout_alignBottom="@+id/Correct0"
+        android:layout_toStartOf="@+id/Correct1" />
+
+    <CheckBox
+        android:id="@+id/InCorrect2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/InCorrect1"
+        android:layout_alignBottom="@+id/InCorrect1"
+        android:layout_toStartOf="@+id/InCorrect1"
+        android:text="2" />
+
+    <CheckBox
+        android:id="@+id/Corner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:layout_alignBaseline="@+id/Corner0"
+        android:layout_alignBottom="@+id/Corner0"
+        android:layout_alignStart="@+id/InCorrect2" />
+
+    <CheckBox
+        android:id="@+id/Vortex2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/Vortex1"
+        android:text="2" />
+
+    <CheckBox
+        android:id="@+id/Correct1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toStartOf="@+id/Corner0" />
+
+    <CheckBox
+        android:id="@+id/InCorrect1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toStartOf="@+id/InCorrect0" />
+
+    <CheckBox
+        android:id="@+id/Vortex1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/Vortex0" />
+
+    <CheckBox
+        android:id="@+id/Corner0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:checked="true"
+        android:text="0" />
+
+    <CheckBox
+        android:id="@+id/InCorrect0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/InCorrect1"
+        android:layout_alignBottom="@+id/InCorrect1"
+        android:layout_alignParentEnd="true"
+        android:checked="true"
+        android:text="0" />
+
+    <CheckBox
+        android:id="@+id/Correct0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView3"
+        android:checked="true"
+        android:text="0" />
+
+    <CheckBox
+        android:id="@+id/Center2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fully"
+        android:layout_alignBaseline="@+id/Center1"
+        android:layout_alignBottom="@+id/Center1"
+        android:layout_toStartOf="@+id/Corner2" />
+
+    <CheckBox
+        android:id="@+id/Corner22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Corner11"
+        android:layout_alignBottom="@+id/Corner11"
+        android:layout_alignStart="@+id/Center2"
+        android:text="Fully" />
+
+    <CheckBox
+        android:id="@+id/Corner11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partly"
+        android:layout_alignBaseline="@+id/Corner00"
+        android:layout_alignBottom="@+id/Corner00"
+        android:layout_toStartOf="@+id/Corner00" />
+
+    <CheckBox
+        android:id="@+id/Center1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Center0"
+        android:layout_alignBottom="@+id/Center0"
+        android:layout_toStartOf="@+id/Center0"
+        android:text="Partly" />
+
+    <CheckBox
+        android:id="@+id/Center0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView7"
+        android:checked="true"
+        android:text="No" />
+
+    <CheckBox
+        android:id="@+id/Corner00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/balls"
+        android:checked="true"
+        android:text="No" />
+
+    <CheckBox
+        android:id="@+id/Vortex0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Vortex1"
+        android:layout_alignBottom="@+id/Vortex1"
+        android:layout_alignParentEnd="true"
+        android:checked="true"
+        android:text="0" />
+
+    <CheckBox
+        android:id="@+id/Corner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Corner0"
+        android:layout_alignBottom="@+id/Corner0"
+        android:layout_toEndOf="@+id/Corner2"
+        android:text="1" />
+
+</RelativeLayout>

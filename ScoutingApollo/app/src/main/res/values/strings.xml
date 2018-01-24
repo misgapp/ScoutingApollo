@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Apollo Scouting</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string-array name="Teams_Names">
+        <item>-Select-</item>
+        <item>9662</item>
+        <item>11808</item>
+        <item>12363</item>
+        <item>12016</item>
+    </string-array>
+    <string name="title_activity_saved_scouts">Saved Scouts</string>
+</resources>
