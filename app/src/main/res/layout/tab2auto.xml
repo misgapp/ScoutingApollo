@@ -19,17 +19,17 @@
         android:textSize="20dp" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/SafeZone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView5"
+        android:layout_below="@+id/MoreCubes"
         android:layout_marginTop="25dp"
         android:text="Safe zone:"
         android:textSize="20dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/MoreCubes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -39,40 +39,39 @@
         android:textSize="20dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/ReadImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView3"
+        android:layout_below="@+id/FirstCube"
         android:layout_marginTop="18dp"
         android:text="Read image:"
         android:textSize="20dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/FirstCube"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/Jewels"
         android:layout_marginTop="19dp"
         android:text="First cube:"
         android:textSize="20dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/Jewels"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="Jewels:"
+        android:text="Jewel:"
         android:textSize="20dp" />
 
     <Switch
-        android:id="@+id/CapBall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView6"
-        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignBaseline="@+id/SafeZone"
+        android:layout_alignBottom="@+id/SafeZone"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="13dp"
         android:textOff="No"
@@ -91,15 +90,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="True"
-        android:layout_alignBaseline="@+id/textView3"
-        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignBaseline="@+id/FirstCube"
+        android:layout_alignBottom="@+id/FirstCube"
         android:layout_toStartOf="@+id/Correct0" />
 
     <CheckBox
         android:id="@+id/InCorrect1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView4"
+        android:layout_alignTop="@+id/ReadImage"
         android:layout_toStartOf="@+id/InCorrect0"
         android:text="True" />
 
@@ -126,7 +125,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView3"
+        android:layout_alignTop="@+id/FirstCube"
         android:checked="true"
         android:text="False" />
 
@@ -155,8 +154,8 @@
         android:ems="10"
         android:inputType="number"
         android:text="0"
-        android:layout_alignBaseline="@+id/textView5"
-        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignBaseline="@+id/MoreCubes"
+        android:layout_alignBottom="@+id/MoreCubes"
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/Vortex1" />
 
